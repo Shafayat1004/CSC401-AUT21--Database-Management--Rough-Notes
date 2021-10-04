@@ -1,0 +1,88 @@
+\documentclass{article}
+\usepackage{amsmath, amsthm, amsfonts, bm, graphicx, xcolor, soul, mathtools, parskip}
+
+\title{CSC401 Lecture 1 Summary}
+\author{Mir Shafayat Ahmed}
+
+\begin{document}
+    \pagecolor[HTML]{FFFFCC}
+    \maketitle
+    \section*{Rich Picture}
+        \subsection*{Purpose}
+            Why do we develop a software solution. First we have to find the problem. Analyse it.\\
+            We will learn some analysis techniques. We start with Rich Picture to get a generalized idea.
+        
+        \subsection*{Starting}
+            We will get a better understanding of the system when we start to make it.
+            \\
+            What we need to include is discussed.
+            \\
+            The green highlighted area is the existing system.
+            The other stuff are external.
+            \(\rightarrow\) uses shown.
+            We draw rich picture to see where we can automate already existing processes.
+            \\
+            Dialog boxes discuss the issues. The arrows describe the process. Logos are used to represent people and structures.
+            \begin{equation*}
+                Doctors \xrightarrow{treat} patients
+            \end{equation*}
+            An issue of Doctors are they can't remember stuff long time ago. So that would be expressed in the dialog box.        
+            \\
+            In another type of rich picture rather than have arrows, we list the activities performed by the structure or people below.
+            \\
+            We use a dashed arrow \(\dashrightarrow\) where direct participation is not required. Also if there is any room for vagueness we use dashed lines. 
+            \\
+            Bidirectional arrows \(\leftrightarrow\) are used where both actors participate. Both entities are equally important.
+        \subsection*{Model 1: Process Flow}
+            A student enters the library \(\rightarrow\) Searches for book \(\rightarrow\) Finds book \(\to\) register books \(\to\) RFID reader \(\to\) local pc searches database for availability \(\to\) etc
+            \\
+            But we wont use this, we won't represent process flow in rich picture. We will do that in BPMS diagrams.
+        \subsection*{*Advice for group given*}
+        \subsection*{What to do}
+            Rich Picture can be less detailed. But making a detailed picture will help the analysis in later stages.
+    \section*{System Element Analysis}
+        A system is a combination of tasks done by entities to achieve some goal.\\
+        We will be working with Information System.
+        \subsection*{Information System (IS)}
+            Arrangement of people, data, processes and IT. Where IT is a term where we use computer tech (hardware and software) with telecommunication technology (data, image and voice networks etc.).
+        \subsection*{The Six Elements}
+            Human, Non-Computing hardware, computing hardware, software, database, communication and network.
+            \subsubsection*{Human: Stakeholders}
+                Owners, Users, Dev Team, External Service Providers.\\
+                Stakeholders consist of:
+                \begin{itemize}
+                    \item Primary (Primary Customer)
+                    \item Secondary (People responsible to develop the system (Dev Team))
+                    \item Key (System owners, key decision makers, goal setters, authority)
+                \end{itemize}
+            \subsubsection*{How to Identify Stakeholders}
+                Contact people after brainstorming, research work.
+                For a 6 month project, we will do most rigorous analysis within 15 days.But analysis doesn't stop. it is an ongoing process.The requirements might change.
+                \paragraph
+                All analysis for the course project should be done within 5 days.
+                \\
+                2 days for existing system analysis. Show to client. Fix.
+                \\
+                Next 3 days for proposed system. Show to client. Fix.
+            \subsubsection*{Non-Computing Hardware}
+                Forms, Reports, Books, Printed Stuff etc.
+                We need to know if people use them and how they use them.
+            \subsubsection*{Database}
+                *Log files*, Register Book, SQL Server
+            \subsubsection*{Why use Six element analysis}
+                Reduce non computing elements.
+            \subsubsection*{Basic Data Entry}
+                For each element, we list out who/what falls under the category. For each we show what they do or what things are used for. Step by step activities must be mentioned that work towards a goal.
+    \section*{Advice}
+        Always focus on your goal. Do not mention things irrelevant to you.\\
+        Take max 5 days after project details are given for rigorous analysis.\\
+        Identify around 15 Processes.\\
+        
+
+            
+                
+
+        
+    
+
+\end{document}
