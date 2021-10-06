@@ -1,0 +1,105 @@
+\documentclass{article}
+\usepackage{amsmath, amsthm, amsfonts, bm, graphicx, xcolor, soul, mathtools, parskip}
+
+\title{CSC401 Lecture 2 Session 1 Summary}
+\author{Mir Shafayat Ahmed}
+
+\begin{document}
+    \pagecolor[HTML]{FFFFCC}
+    \maketitle
+    \section*{Business Process Modeling}
+        We make Rich Picture firstly then we move to Six Element Analysis. SEA is more detailed than Rich Picture. After that we go into further analysis with Business Process Modeling.
+        For each Element, there should be separate models.
+        \subsection*{BPMN 2.0}
+            We follow the BPMN standard and therefore the shapes of Flow Objects:
+            \begin{itemize}
+                \item Events (Circle)
+                \item Activities (Rounded Rectangle)
+                \item Gateways (Diamond)
+            \end{itemize}
+            Connectors: 
+            \begin{itemize}
+                \item Sequence Flow (solid line with filled arrowhead)
+                \item Message Flow (hollow dot, dashed line, hollow arrow)
+                \item Association (dotted line, open arrowhead)
+            \end{itemize}
+            Artifacts:
+            \begin{itemize}
+                \item Data Objects
+                \item Text area
+                \item Groups
+            \end{itemize}
+            Swimlanes.
+            % figure here
+
+            \paragraph{}
+            Activities are Rounded Rectangles.\\
+            Atomic \emph{Tasks} do not need to be broken down.
+            Activities that can be broken down to smaller tasks are called \emph{Sub-Processes}.\\
+            Activities that are repeated, are called \emph{Looped Task}.
+            \emph{each type of tasks have specific shapes keep in mind}\\
+            For tasks that will be performed by users, an icon of the user will be given o the top-left corner.\\
+            Specialized tasks markers are in top-left. \emph{Not Mandatory}\\
+            \subsubsection*{Events}
+                \begin{itemize}
+                    \item Start (simple circle)
+                    \item Intermediate (double circle)
+                    \item End (bold circle)
+                \end{itemize}
+                \textbf{\emph{Event is something that \emph{Happens}.
+                Activities are done by some entity}}
+                %  insert image of different Event Triggers
+                \begin{itemize}
+                    \item None (Undefined/Unknown)
+                    \item Message Based
+                    \item Timer Based
+                    \item Rule Based
+                    \item Multiple reasons based Triggers (Either OR)
+                    \item Link 
+                \end{itemize}
+                Intermediate Events may have some more.
+                \begin{itemize}
+                    \item Error
+                    \item Compensation
+                \end{itemize}
+                Sometimes a sequence of tasks can be interrupted.
+                We represent it by placing an intermediate event in the boundary of a task.
+                \paragraph{}
+                For End Events, we usually don't think of them as triggers. We think as if something is given at the end.\\
+                Timer and Rule based products do not appear in End Events generally:
+                \begin{itemize}
+                    \item Terminate
+                \end{itemize}
+            
+        \subsection*{Gateways}
+            \begin{itemize}
+                \item Exclusive (We can take one and only path) (X can be within the diamond)
+                    \subitem Data-based
+                    \subitem Event-based
+                \item Inclusive (one or many paths can be taken)
+                \item Complex (something else)
+                \item Parallel (Multiple pathways are followed parallelly)
+            \end{itemize}
+            \subsubsection*{Exclusive, based on data}
+                A hatch mark / means default path.
+            \subsubsection*{Inclusive Gates}
+                Since we can take multiple paths, we always use two inclusive gates that will eventually merge the paths.
+            \subsubsection*{Parallel}
+                They do not need a condition. All paths are taken simultaneously. Because of different paths, they will need to be converged so here too, we always need two of them.
+            \subsubsection*{Sequence flow}
+                connects flow objects.
+            \subsubsection*{Message Flow}
+                Passing of messages from one pool to another. Label must be present.
+        
+        \emph{Swimlanes and part 2 of this topic will be in Lecture 3}
+            
+                
+
+                
+
+
+            
+
+    
+
+\end{document}
