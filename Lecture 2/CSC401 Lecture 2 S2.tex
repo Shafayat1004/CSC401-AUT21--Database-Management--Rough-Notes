@@ -1,0 +1,38 @@
+\documentclass{article}
+\usepackage{amsmath, amsthm, amsfonts, bm, graphicx, xcolor, soul, mathtools, parskip}
+
+\title{CSC401 Lecture 2 Session 2 Summary}
+\author{Mir Shafayat Ahmed}
+
+\begin{document}
+    \pagecolor[HTML]{FFFFCC}
+    \maketitle
+
+    \section{BPMN}
+        \subsection{Swimlane}
+            What does the entity do? What are the activities performed.\\
+            \emph{Pools} represent a process from the entities perspective. Start to end.\\
+            For example, in a Doctor's Office Pool there are two separate roles. Receptionist and Doctors Lanes are created.
+            
+            \paragraph{}
+            \emph{Sequence Flows} can cross lanes.\\
+            \emph{Subprocesses} are rounded rectangles withing rounded rectangles. Within Subprocesses there doesn't need to be a start-end event. But a normal process flow must have a start-end event.
+            
+            \subsubsection{Pool}
+                \emph{Dashed Lines} crossing boundaries are message flows. Sequence Flows cannot cross boundaries. The process \emph{is} the sequence flow.\\
+                In a message, if there is a specific data being sent, we add the \emph{Data-Object} symbol. We connect the \emph{Data-Object} with the \emph{Association (Dotted Line)} connecting to the \emph{Message Flow Line}
+            
+            \subsubsection{Lanes}
+                To transfer a data object we use a directional \emph{Association} arrow with the Data-Object in the middle.
+            
+            \subsubsection{Subprocesses}
+                Messages can go out of subprocesses. Sequences cannot.
+    \section{Improvement Process}
+        The idea stems from business Process Engineering. Our target is always to increase quality, decrease time and cost (QTC).
+        
+        \subsection{Key Performance Indicators (KPI)}
+            \subsubsection{}
+
+
+
+\end{document}
